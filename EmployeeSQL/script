@@ -9,8 +9,6 @@ FROM employees
 INNER JOIN salaries ON
 employees.emp_no = salaries.emp_no;
 
-SELECT * FROM employees;
-
 -- 2. List first name, last name, and hire date for employees who were hired in 1986.
 SELECT
 employees.first_name,
@@ -22,10 +20,6 @@ WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31';
 -- 3. List the manager of each department with the following 
 -- information: department number, department name, the manager's employee number, 
 -- last name, first name.
-
-SELECT * FROM dept_manager;
-SELECT * FROM departments;
-SELECT * FROM employees;
 
 SELECT 
 departments.dept_no,
@@ -63,7 +57,6 @@ WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
 
 --6. List all employees in the Sales department, 
 -- including their employee number, last name, first name, and department name.
-SELECT * FROM dept_emp; 
 SELECT 
 employees.emp_no,
 employees.last_name,
